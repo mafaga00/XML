@@ -1,50 +1,36 @@
 # XML
 
- 21. Создать внешний репозиторий c названием XML.
-***
-Repositories -> New -> Repos Name:XML
-***
- 22. Клонировать репозиторий XML на локальный компьютер.
-***
-git clone HTTPS link
-***
- 23. Внутри локального XML создать файл “new.xml”.
-***
-touch new.xml
-***
- 24. Добавить файл под гит.
-***
-git add new.xml
-***
- 25. Закоммитить файл.
-***
-git commit -m "add new.xml"
-***
- 26. Отправить файл на внешний GitHub репозиторий.
-***
-git push
-***
+ 21. Создать внешний репозиторий c названием XML.     New
+                                                      Create repository
+
+ 22. Клонировать репозиторий XML на локальный компьютер.   git clone git@github.com:AndreiHeranok/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.  touch new.xml
+
+ 24. Добавить файл под гит.    git add . new.xml
+ 25. Закоммитить файл.       git commit -m "add xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий.  git push
+ 
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
-***
-cat > new.xml -> ^C |OR| vim new.xml -> INSERT -> esc -> :wq
-Содержание добавленной информации
+
+Вносим изменения: vim new.xml
+нажать клавишу "i" ввести текст
 
 <info>
- <FIO>Ovsyannikov Nikita Dmitrievich</FIO>
- <AGE>22</AGE>
- <number_of_pets>0</number_of_pets>
+ <FIO>Heranok Andrei Vladimirovich</FIO>
+ <AGE>29</AGE>
+ <number_of_pets>1</number_of_pets>
  <Future_desired_salary>500</Future_desired_salary>
 </info>
 
-***
- 28. Отправить изменения на внешний репозиторий.
-***
-git commit -am "add file about me"
-***
- 29. Создать файл preferences.xml
-***
-touch preferences.xml
-***
+Cохранить и выйти: "esc" ":wq"
+
+28. Отправить изменения на внешний репозиторий.   git commit -am "edit xml"
+                                                  git push
+ 
+29. Создать файл preferences.xml       touch preferences.xml
+
 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
   
 Вносим изменения: vim preferences.xml
@@ -117,7 +103,7 @@ Cохранить и выйти: "esc" ":wq"
 <bug>
     <ID>1</ID>,
     <Version>Windows 10</Version>,
-    <Summary> Не отображаеться предупреждающие окно в приложении при деление на ноль</Summary>,
+    <Summary>Не отображаеться предупреждающие окно в приложении при деление на ноль</Summary>,
     <Req_id>22.3</Req_id>,
     <Steps>ткрыть приложение, Ввести число, Нажать кнопку '/', вссети другое число, нажать кнопку '='</Steps>,
     <Actual_result>в полле ввода число 0,предупреждающего окна нету</Actual_result>,
