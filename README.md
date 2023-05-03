@@ -49,6 +49,7 @@ touch preferences.xml
 ***
 cat > preferences.xml -> ^C |OR| vim preferences.xml -> INSERT -> esc -> :wq
 Содержание добавленной информации
+
 <Favorite>
  <Favorite_movie>There will be blood</Favorite_movie>
  <Favorite_series>Breaking bad</Favorite_series>
