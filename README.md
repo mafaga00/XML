@@ -45,23 +45,26 @@ git commit -am "add file about me"
 ***
 touch preferences.xml
 ***
- 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
-***
-cat > preferences.xml -> ^C |OR| vim preferences.xml -> INSERT -> esc -> :wq
-Содержание добавленной информации
+30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+  
+Вносим изменения: vim preferences.xml
+нажать клавишу "i" ввести текст
 
 <Favorite>
- <Favorite_movie>There will be blood</Favorite_movie>
- <Favorite_series>Breaking bad</Favorite_series>
- <favorite_food>Steak</favorite_food>
- <favorite_time_of_year>Winter</favorite_time_of_year>
- <country_you_like_to_visit>China</country_you_like_to_visit>
+ <Favorite_movie>The Big Lebowski</Favorite_movie>
+ <Favorite_series>La casa de papel</Favorite_series>
+ <favorite_food>Potato</favorite_food>
+ <favorite_time_of_year>Summer</favorite_time_of_year>
+ <country_you_like_to_visit>Canada</country_you_like_to_visit>
 </Favorite>
-***
- 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
-***
-cat > skills.xml -> ^C |OR| vim skills.xml -> INSERT -> esc -> :wq
-Содержание добавленной информации
+
+Cохранить и выйти: "esc" ":wq"
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML 
+
+Создаём файл: touch skills.xml
+Вносим изменения: vim skills.xml
+нажать клавишу "i" ввести текст
 
 <skills>
     <Базовая_теория>Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования, SDLC, STLC</Базовая_теория>,
@@ -92,47 +95,38 @@ cat > skills.xml -> ^C |OR| vim skills.xml -> INSERT -> esc -> :wq
     <Методология_разработки>Scrum</Методология_разработки>,
     <Python>Изучение основ. Создание клиент серверного приложения</Python>
 </skills>
-***
- 32. Сделать коммит в одну строку.
-***
-git add . && git commit -m "add skills"
-***
+
+Cохранить и выйти: "esc" ":wq"
+
+ 32. Сделать коммит в одну строку.                   git commit -ma "add new xml"
+
  33. Отправить сразу 2 файла на внешний репозиторий.
-***
-git push
-***
- 34. На веб интерфейсе создать файл bug_report.xml.
-***
-Add file -> Create new file -> Name: bug_report.xml
-***
- 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
-***
-Commit New File
-***
+                                                     git add . 
+                                                     git commit -m "edit new xml"
+                                                     git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.  - Add file
+							    - Create new file
+							    - Commit new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. -edit this file
+                                                                     в строке Commit changes пишем новый Commit
+                                                                     Commit changes
+
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
-Choose bug_report.xml -> Edit this file
-Содержание добавленной информации
 
 <bug>
     <ID>1</ID>,
     <Version>Windows 10</Version>,
     <Summary>Не отображаеться предупреждающие окно в приложении при деление на ноль</Summary>,
     <Req_id>22.3</Req_id>,
-    <Steps>Открыть приложение 'Калькулятор', Ввести число, Нажать кнопку '/', ввести другое число, нажать кнопку '='</Steps>,
-    <Actual_result>Окно ошибки с текстом 'вы не можете делить на 0' отсутствует</Actual_result>,
+    <Steps>ткрыть приложение, Ввести число, Нажать кнопку '/', вссети другое число, нажать кнопку '='</Steps>,
+    <Actual_result>в полле ввода число 0,предупреждающего окна нету</Actual_result>,
     <Expected_result>Появляется окно ошибки с текстом,'вы не можете делить на 0'</Expected_result>,
     <Severity>Minor</Severity>,
     <Priority>Low</Priority>,
-    <Attachments>Скриншот</Attachments>
+    <Attachments>screenshot</Attachments>
 </bug>
-***
-Choose bug_report.xml -> Edit this file
-***
- 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
-***
-Commit changes
-***
- 38. Синхронизировать внешний и локальный репозиторий XML
-***
-git pull
-***
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.    в строке Commit changes пишем новый Commit
+                                                                     Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML   git pull
