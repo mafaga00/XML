@@ -28,6 +28,7 @@ git push
 ***
 cat > new.xml -> ^C |OR| vim new.xml -> INSERT -> esc -> :wq
 Содержание добавленной информации
+
 <info>
  <FIO>Ovsyannikov Nikita Dmitrievich</FIO>
  <AGE>22</AGE>
@@ -59,6 +60,7 @@ cat > preferences.xml -> ^C |OR| vim preferences.xml -> INSERT -> esc -> :wq
 ***
 cat > skills.xml -> ^C |OR| vim skills.xml -> INSERT -> esc -> :wq
 Содержание добавленной информации
+
 <skills>
     <Базовая_теория>Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования, SDLC, STLC</Базовая_теория>,
     <клиент_сервер>клиент-серверная архитектура</клиент_сервер>,
@@ -108,6 +110,7 @@ Commit New File
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
 Choose bug_report.xml -> Edit this file
 Содержание добавленной информации
+
 <bug>
     <ID>1</ID>,
     <Version>Windows 10</Version>,
