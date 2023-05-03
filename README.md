@@ -100,7 +100,7 @@ Cохранить и выйти: "esc" ":wq"
 
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
 
-<bug>
+"<bug>
     <ID>1</ID>,
     <Version>Windows 10</Version>,
     <Summary>Не отображаеться предупреждающие окно в приложении при деление на ноль</Summary>,
@@ -111,7 +111,7 @@ Cохранить и выйти: "esc" ":wq"
     <Severity>Minor</Severity>,
     <Priority>Low</Priority>,
     <Attachments>screenshot</Attachments>
-</bug>
+</bug>"
 
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.    в строке Commit changes пишем новый Commit
                                                                      Commit changes
