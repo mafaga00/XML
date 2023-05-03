@@ -35,6 +35,7 @@ cat > new.xml -> ^C |OR| vim new.xml -> INSERT -> esc -> :wq
  <number_of_pets>0</number_of_pets>
  <Future_desired_salary>500</Future_desired_salary>
 </info>
+
 ***
  28. Отправить изменения на внешний репозиторий.
 ***
