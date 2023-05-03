@@ -56,6 +56,8 @@ cat > preferences.xml -> ^C |OR| vim preferences.xml -> INSERT -> esc -> :wq
 </Favorite>
 ***
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+***
+cat > skills.xml -> ^C |OR| vim skills.xml -> INSERT -> esc -> :wq
 Содержание добавленной информации
 <skills>
     <Базовая_теория>Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования, SDLC, STLC</Базовая_теория>,
@@ -87,8 +89,6 @@ cat > preferences.xml -> ^C |OR| vim preferences.xml -> INSERT -> esc -> :wq
     <Python>Изучение основ. Создание клиент серверного приложения</Python>
 </skills>
 ***
-cat > skills.xml -> ^C |OR| vim skills.xml -> INSERT -> esc -> :wq
-***
  32. Сделать коммит в одну строку.
 ***
 git add . && git commit -m "add skills"
@@ -106,6 +106,7 @@ Add file -> Create new file -> Name: bug_report.xml
 Commit New File
 ***
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+Choose bug_report.xml -> Edit this file
 Содержание добавленной информации
 <bug>
     <ID>1</ID>,
