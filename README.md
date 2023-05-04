@@ -1,55 +1,70 @@
- 21. Создать внешний репозиторий c названием XML.     New
-                                                      Create repository
+# XML
 
- 22. Клонировать репозиторий XML на локальный компьютер.   git clone git@github.com:AndreiHeranok/XML.git
-
- 23. Внутри локального XML создать файл “new.xml”.  touch new.xml
-
- 24. Добавить файл под гит.    git add . new.xml
- 25. Закоммитить файл.       git commit -m "add xml"
-
- 26. Отправить файл на внешний GitHub репозиторий.  git push
- 
- 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
-
-Вносим изменения: vim new.xml
-нажать клавишу "i" ввести текст
-
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ ***
+ `Repositories -> New -> Repos Name:XML`
+ ***
+ 22. Клонировать репозиторий XML на локальный компьютер.
+ ***
+ `git clone <HTTPS link>`
+ ***
+ 23. Внутри локального XML создать файл “new.xml”.
+ ***
+ `> new.xml |OR| touch new.xml`
+ ***
+ 24. Добавить файл под гит.
+ ***
+ `git add new.xml`
+ ***
+ 25. Закоммитить файл.
+ ***
+ `git commit -m "add new.xml"`
+ ***
+ 26. Отправить файл на внешний GitHub репозиторий.
+ ***
+ `git push`
+ ***
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в   формате XML.
+ ***
+ `vim new.json -> INSERT -> esc -> :wq`
+ Содержание добавленной информации:
+ ```
 <info>
- <FIO>Heranok Andrei Vladimirovich</FIO>
- <AGE>29</AGE>
- <number_of_pets>1</number_of_pets>
+ <FIO>Ovsyannikov Nikita Dmitrievich</FIO>
+ <AGE>22</AGE>
+ <number_of_pets>0</number_of_pets>
  <Future_desired_salary>500</Future_desired_salary>
 </info>
-
-Cохранить и выйти: "esc" ":wq"
-
-28. Отправить изменения на внешний репозиторий.   git commit -am "edit xml"
-                                                  git push
- 
-29. Создать файл preferences.xml       touch preferences.xml
-
+```
+***
+28. Отправить изменения на внешний репозиторий.
+***
+`git commit -am "add info about me"`
+***
+29. Создать файл preferences.xml
+***
+`> preferences.xml |OR| touch preferences.xml`
+***
 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
-  
-Вносим изменения: vim preferences.xml
-нажать клавишу "i" ввести текст
-
+***
+`vim preferences.xml -> INSERT -> esc -> :wq`
+Содержание добавленной информации:
+```
 <Favorite>
- <Favorite_movie>The Big Lebowski</Favorite_movie>
- <Favorite_series>La casa de papel</Favorite_series>
- <favorite_food>Potato</favorite_food>
- <favorite_time_of_year>Summer</favorite_time_of_year>
- <country_you_like_to_visit>Canada</country_you_like_to_visit>
+ <Favorite_movie>There will be blood</Favorite_movie>
+ <Favorite_series>Breaking bad</Favorite_series>
+ <favorite_food>Steak</favorite_food>
+ <favorite_time_of_year>Winter</favorite_time_of_year>
+ <country_you_like_to_visit>China</country_you_like_to_visit>
 </Favorite>
-
-Cохранить и выйти: "esc" ":wq"
-
+```
+***
  31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML 
-
-Создаём файл: touch skills.xml
-Вносим изменения: vim skills.xml
-нажать клавишу "i" ввести текст
-
+***
+`cat > skills.xml -> ^C`
+Содержание добавленной информации:
+```
 <skills>
     <Базовая_теория>Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования, SDLC, STLC</Базовая_теория>,
     <клиент_сервер>клиент-серверная архитектура</клиент_сервер>,
@@ -79,38 +94,47 @@ Cохранить и выйти: "esc" ":wq"
     <Методология_разработки>Scrum</Методология_разработки>,
     <Python>Изучение основ. Создание клиент серверного приложения</Python>
 </skills>
-
-Cохранить и выйти: "esc" ":wq"
-
- 32. Сделать коммит в одну строку.                   git commit -ma "add new xml"
-
+```
+ 32. Сделать коммит в одну строку. 
+ ***
+ `git add . && git commit -am "add skills"`
+ ***
  33. Отправить сразу 2 файла на внешний репозиторий.
-                                                     git add . 
-                                                     git commit -m "edit new xml"
-                                                     git push
-
- 34. На веб интерфейсе создать файл bug_report.xml.  - Add file
-							    - Create new file
-							    - Commit new file
- 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. -edit this file
-                                                                     в строке Commit changes пишем новый Commit
-                                                                     Commit changes
-
+ ***
+ `git push`
+ ***
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ ***
+ `Add file -> Create new file -> Name: bug_report.xml`
+ ***
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ ***
+ `Commit New File`
+ ***
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
-
+***
+`Choose bug_report.xml -> Edit this file`
+Содержание добавленной информации:
+```
 <bug>
     <ID>1</ID>,
     <Version>Windows 10</Version>,
-    <Summary>Не отображаеться предупреждающие окно в приложении при деление на ноль</Summary>,
+    <Summary>Не отображаеться предупреждающие окно в приложении Калькулятор при деление на ноль</Summary>,
     <Req_id>22.3</Req_id>,
-    <Steps>ткрыть приложение, Ввести число, Нажать кнопку '/', вссети другое число, нажать кнопку '='</Steps>,
-    <Actual_result>в полле ввода число 0,предупреждающего окна нету</Actual_result>,
+    <Steps>Открыть приложение Калькулятор, Ввести число, Нажать кнопку '/', вссети другое число, нажать кнопку '='</Steps>,
+    <Actual_result>Окно ошибки с текстом 'вы не можете делить на 0' отсутствует</Actual_result>,
     <Expected_result>Появляется окно ошибки с текстом,'вы не можете делить на 0'</Expected_result>,
     <Severity>Minor</Severity>,
     <Priority>Low</Priority>,
-    <Attachments>screenshot</Attachments>
+    <Attachments>Скриншот</Attachments>
 </bug>
-
- 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.    в строке Commit changes пишем новый Commit
-                                                                     Commit changes
- 38. Синхронизировать внешний и локальный репозиторий XML   git pull
+```
+***
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+***
+`Commit changes`
+***
+ 38. Синхронизировать внешний и локальный репозиторий XML
+***
+`git pull`
+***
