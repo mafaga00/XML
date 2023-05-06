@@ -1,1 +1,12 @@
-
+<bug>
+    <ID>1</ID>,
+    <Version>Windows 10</Version>,
+    <Summary>Не отображаеться предупреждающие окно в приложении Калькулятор при деление на ноль</Summary>,
+    <Req_id>22.3</Req_id>,
+    <Steps>Открыть приложение Калькулятор, Ввести число, Нажать кнопку '/', вссети другое число, нажать кнопку '='</Steps>,
+    <Actual_result>Окно ошибки с текстом 'вы не можете делить на 0' отсутствует</Actual_result>,
+    <Expected_result>Появляется окно ошибки с текстом,'вы не можете делить на 0'</Expected_result>,
+    <Severity>Minor</Severity>,
+    <Priority>Low</Priority>,
+    <Attachments>Скриншот</Attachments>
+</bug>
